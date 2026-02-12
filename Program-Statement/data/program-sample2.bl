@@ -1,0 +1,29 @@
+PROGRAM Test2 IS
+
+  INSTRUCTION one IS
+     turnright
+     move
+     turnleft
+  END one
+  
+  INSTRUCTION two IS
+    move
+    turnleft
+  END two
+
+  INSTRUCTION three IS
+    skip
+  END three
+  
+  INSTRUCTION four IS
+    infect
+  END four
+  
+BEGIN
+  WHILE true DO
+    two
+    four
+    one
+    three
+  END WHILE
+END Test2
